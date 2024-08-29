@@ -29,22 +29,28 @@ export default function Header() {
           size={20}
         />
       </div>
-      <div className="flex items-center space-x-4">
-        <Button variant="ghost" size="icon" className="relative">
+      <div className="flex items-center space-x-1">
+        <Button
+          variant="ghost"
+          size="icon"
+          className="relative hover:bg-transparent"
+        >
           <Bell size={20} className="text-gray-500" />
           <div className="rounded-full size-3 border-2 border-white bg-red-600 relative right-3 -top-2"></div>
         </Button>
-        <Button variant="ghost" size="icon">
+        <Button variant="ghost" size="icon" className="hover:bg-transparent">
           <MessageSquareMore size={20} className="" />
         </Button>
-        <Avatar>
-          <AvatarImage src="/acc.jpg" alt="@shadcn" />
-          <AvatarFallback>AJ</AvatarFallback>
-        </Avatar>
-        <div className="flex items-center">
-          <span className="font-medium hidden lg:flex">Admirra John</span>
-          <ChevronDown size={16} className="inline -ml-2 lg:ml-1" />
-        </div>
+        <Button variant="ghost" className="hover:bg-transparent flex gap-2">
+          <Avatar>
+            <AvatarImage src="/acc.jpg" alt="@shadcn" />
+            <AvatarFallback>AJ</AvatarFallback>
+          </Avatar>
+          <div className="flex items-center">
+            <span className="font-medium hidden lg:flex">Admirra John</span>
+            <ChevronDown size={16} className="inline -ml-2 lg:ml-1" />
+          </div>
+        </Button>
       </div>
     </header>
   );

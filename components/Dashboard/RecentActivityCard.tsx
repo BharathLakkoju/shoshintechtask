@@ -1,23 +1,30 @@
-// components/RecentActivityCard.tsx
+"use client";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 
 export default function RecentActivityCard() {
   return (
-    <Card className="bg-[#161E54] text-white max-w-[427px] min-h-[300px]">
+    <Card className="bg-[#161E54] text-white xl:max-w-[427px] lg:max-w-[300px] lg:min-h-[300px] xl:min-h-full max-w-[calc(100%-2rem)]">
       <CardHeader>
         <CardTitle>Recently Activity</CardTitle>
       </CardHeader>
-      <CardContent>
-        <p className="text-sm mb-2">10.40 AM, Fri 10 Sept 2021</p>
-        <h3 className="text-xl font-bold mb-2">You Posted a New Job</h3>
-        <p className="text-sm mb-4">
+      <CardContent className="flex flex-col">
+        <span className="text-xs mb-2 text-gray-400">
+          10.40 AM, Fri 10 Sept 2021
+        </span>
+        <span className="text-lg font-medium mb-5 xl:mb-2">
+          You Posted a New Job
+        </span>
+        <span className="text-xs mb-8 xl:mb-4 text-gray-300">
           Kindly check the requirements and terms of work and make sure
           everything is right.
-        </p>
-        <div className="flex justify-between items-center">
-          <p className="text-sm">Today you makes 12 Activity</p>
-          <Button variant="secondary" size="sm">
+        </span>
+        <div className="flex flex-row md:flex-col xl:flex-row justify-between items-start xl:items-center gap-5">
+          <span className="text-xs">Today you makes 12 Activity</span>
+          <Button
+            variant="outline"
+            className="bg-[#FF5151] text-white rounded-sm hover:bg-[#FF3232] hover:text-white"
+          >
             See All Activity
           </Button>
         </div>

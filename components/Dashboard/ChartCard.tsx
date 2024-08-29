@@ -28,11 +28,13 @@ export default function Component({
   change: string;
 }) {
   return (
-    <Card className="w-full min-h-[200px]">
+    <Card className="max-w-[calc(100%-2rem)] min-h-[200px]">
       <CardHeader className="flex flex-row items-center justify-between space-y-0 p-0"></CardHeader>
       <CardContent className="grid grid-cols-2 gap-2">
         <div className="flex flex-col items-start justify-center gap-5 mt-5">
-          <CardTitle className="text-sm lg:text-lg font-bold">{title}</CardTitle>
+          <CardTitle className="text-sm lg:text-lg font-medium">
+            {title}
+          </CardTitle>
           <div className="text-4xl lg:text-5xl font-medium">{value}</div>
           <span className="text-xs text-muted-foreground">{subtext}</span>
         </div>
@@ -83,7 +85,7 @@ export default function Component({
               </RechartsLineChart>
             </ResponsiveContainer>
           </div>
-          <div className="mt-2 text-xs font-medium text-black rounded-sm bg-orange-500/10 py-1 px-2">
+          <div className="mt-2 text-xs font-normal text-black rounded-sm bg-orange-500/10 py-1 px-2">
             {change}
           </div>
         </div>

@@ -28,10 +28,12 @@ export default function StatCard({
 
   return (
     <Card
-      className={`${bgColor} min-w-[200px] text-xl min-h-[150px] shadow-none`}
+      className={`${bgColor} max-w-[calc(100%-2rem)] md:min-w-[200px] text-xl min-h-[150px] shadow-none`}
     >
       <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-5">
-        <CardTitle className="text-sm lg:text-lg font-medium">{title}</CardTitle>
+        <CardTitle className="text-sm lg:text-sm font-medium">
+          {title}
+        </CardTitle>
       </CardHeader>
       <CardContent className="flex flex-col items-start justify-center gap-5">
         <div className="text-3xl lg:text-4xl font-medium">{value}</div>
