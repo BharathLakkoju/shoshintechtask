@@ -29,8 +29,8 @@ export default function ScheduleCard({
           <ChevronDown className="h-4 w-4" />
         </Button>
       </CardHeader>
-      <CardContent>
-        <ul className="space-y-4 flex flex-col overflow-y-auto min-h-[150px] max-h-[220px]">
+      <CardContent className="p-0">
+        <ul className="space-y-4 flex flex-col overflow-y-auto min-h-[150px] max-h-[220px] p-6">
           <span className="text-muted-foreground text-xs">Priority</span>
           {schedules
             .filter((item) => item.type === "priority")
@@ -66,9 +66,11 @@ export default function ScheduleCard({
               </li>
             ))}
         </ul>
-        <Button className="w-full mt-4 bg-white text-[#FF5151] shadow-[0px_0px_2px] hover:bg-gray-100">
-          Create a New Schedule
-        </Button>
+        <div className="flex items-center justify-center w-full border-t pb-2">
+          <Button variant="link" className="mt-1 text-red-500">
+            Create a New Schedule
+          </Button>
+        </div>
       </CardContent>
     </Card>
   );

@@ -58,7 +58,7 @@ export default function AnnouncementCard({
             ))}
         </ul>
       </CardContent>
-      <div className="flex items-center justify-center w-full border-t">
+      <div className="flex items-center justify-center w-full border-t pb-2">
         <Button variant="link" className="mt-1 text-red-500">
           See All Announcement
         </Button>
