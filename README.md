@@ -22,7 +22,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 - First, clone the repository:
 
   ```bash
-  git clone https://github.com/shoshin-dev/shoshin-task.git
+  git clone https://github.com/bharathlakkoju/shoshin-task.git
   ```
 
 - Install the dependencies:
