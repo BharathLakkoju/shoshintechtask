@@ -15,7 +15,7 @@ export default function ScheduleCard({
   schedules: ScheduleProps[];
 }) {
   return (
-    <Card className="xl:max-w-[427px] md:min-h-[300px] md:max-w-[400px] max-w-[calc(100%-2rem)]">
+    <Card className="xl:max-w-[427px] md:min-h-[300px] md:max-w-[400px] w-full max-md:max-w-[calc(100%-2rem)]">
       <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
         <CardTitle className="text-sm font-medium text-[#161E54]">
           Upcoming Schedule

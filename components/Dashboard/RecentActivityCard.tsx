@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 
 export default function RecentActivityCard() {
   return (
-    <Card className="bg-[#161E54] text-white xl:max-w-[427px] lg:max-w-[300px] lg:min-h-[300px] xl:min-h-full max-w-[calc(100%-2rem)]">
+    <Card className="bg-[#161E54] text-white xl:max-w-[427px] lg:max-w-[300px] lg:min-h-[300px] xl:min-h-full max-md:max-w-[calc(100%-2rem)]">
       <CardHeader>
         <CardTitle>Recently Activity</CardTitle>
       </CardHeader>

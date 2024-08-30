@@ -6,7 +6,7 @@ import {
   ResponsiveContainer,
 } from "recharts";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { ArrowUp, MoveUp } from "lucide-react";
+import { ArrowUp } from "lucide-react";
 
 const data = [
   { value: 30 },
@@ -32,7 +32,7 @@ export default function Component({
       <CardHeader className="flex flex-row items-center justify-between space-y-0 p-0"></CardHeader>
       <CardContent className="grid grid-cols-2 gap-2">
         <div className="flex flex-col items-start justify-center gap-5 mt-5">
-          <CardTitle className="text-sm lg:text-lg font-medium">
+          <CardTitle className="text-sm lg:text-[14px] font-medium">
             {title}
           </CardTitle>
           <div className="text-4xl lg:text-5xl font-medium">{value}</div>

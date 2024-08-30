@@ -5,7 +5,7 @@ interface StatCardProps {
   title: string;
   value: number;
   subtext: string;
-  color: "red" | "blue" | "purple";
+  color: string;
 }
 
 export default function StatCard({
@@ -28,7 +28,7 @@ export default function StatCard({
 
   return (
     <Card
-      className={`${bgColor} max-w-[calc(100%-2rem)] md:min-w-[200px] text-xl min-h-[150px] shadow-none`}
+      className={`${bgColor} max-md:max-w-[calc(100%-2rem)] md:min-w-[220px] text-xl min-h-[150px] shadow-none`}
     >
       <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-5">
         <CardTitle className="text-sm lg:text-sm font-medium">
